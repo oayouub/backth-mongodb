@@ -36,11 +36,11 @@ const produitSchema = mongoose.Schema(
             required: true,
         },
         color: {
-            type: String,
+            type: [String],
             required: true,
         },
         parfums: {
-            type: String,
+            type: [String],
             required: true,
         },
     },
