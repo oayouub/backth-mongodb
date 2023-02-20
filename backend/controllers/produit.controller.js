@@ -18,4 +18,9 @@ module.exports.getPosts = async (req, res) => {
     const posts = await ProduitModel.find();
     res.status(200).json(posts);
   };
+
+module.exports.getPostsId = async (req, res) => {
+    const posts = await ProduitModel.findById(req.params.id);
+    res.status(200).json(posts);
+  };
   
